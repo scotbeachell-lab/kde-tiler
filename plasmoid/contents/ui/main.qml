@@ -98,12 +98,15 @@ PlasmoidItem {
 
         LayoutPreview {
             anchors.centerIn: parent
-            width: Math.min(parent.width, parent.height) * 0.9
-            height: width * 0.78
+            width: Math.min(parent.width, parent.height)
+            height: width * 0.8
             layout: root.cfg.layout
             ratio: root.cfg.ratio
             count: 3
             active: root.cfg.enabled
+            bold: true
+            // Accent-coloured master tile = tiling on; all grey and faded = off.
+            masterColor: root.cfg.enabled ? Kirigami.Theme.highlightColor : Kirigami.Theme.textColor
             color: compact.containsMouse ? Kirigami.Theme.highlightColor : Kirigami.Theme.textColor
         }
     }
