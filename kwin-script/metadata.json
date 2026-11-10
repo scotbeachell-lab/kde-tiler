@@ -1,0 +1,13 @@
+{
+    "KPackageStructure": "KWin/Script",
+    "KPlugin": {
+        "Id": "tiler",
+        "Name": "Tiler",
+        "Description": "Automatic window tiling with switchable layouts. Pair with the Tiler panel widget.",
+        "Icon": "view-grid",
+        "License": "GPL-3.0-or-later",
+        "Version": "1.0"
+    },
+    "X-Plasma-API": "javascript",
+    "X-Plasma-MainScript": "code/main.js"
+}
